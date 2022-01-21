@@ -91,7 +91,9 @@ legend {
   border-radius: 9pt;
   width: 80%;
 }
-
+legend{
+  width: 100%;
+}
 article {
   margin-top: 70px;
 }

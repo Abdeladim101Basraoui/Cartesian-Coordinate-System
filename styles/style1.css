@@ -1,0 +1,87 @@
+
+tfoot td{
+    text-align: center;
+  color: red;
+  font-size: 10pt;
+}
+#equal{
+  width: 200px;
+}
+body{text-align: center;}
+table {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 10em;  
+    border: 1pt solid black;
+    background-color: rgba(64, 131, 73, 0.507);
+}
+ /* the text result */
+#input{
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  height: 30px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all .2s ease-in-out;
+}
+#input:hover {
+  border: 1px solid rgb(12, 3, 3);
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.operator ,#dot,#c,#clear,#open,.Scoperator{
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 40px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+#open{
+  width: 80pt;
+}
+#dot{
+  color: rgb(7, 7, 87);
+  font-size: 15pt;
+}
+.operator:hover,#dot:hover,#c:hover,#clear:hover,#open:hover,.Scoperator:hover{
+  background-color: #ddd;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+.operator:active,.inValue:active,#equal:active{font-weight: bold;}
+.inValue{
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 40px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+.inValue:hover{
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+#equal{
+  background-color: #307CF9;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #1857BB;
+}
