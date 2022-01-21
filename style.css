@@ -60,12 +60,21 @@
   /* demo - display only */
   html, body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color: #EFEFEF;
   }
   
-  article {
+  article,fieldset {
     margin: 30px;
     display: block ;
     width: 30%;
+    background:#FFF;
+  }
+legend{
+border:1px solid #CCC;
+border-radius: 9pt;
+  display: block ;
+  width: 100%;
+  background:#FFF;
 }
 #calc{
 width: 70%;
