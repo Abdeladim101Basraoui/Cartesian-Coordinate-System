@@ -55,83 +55,88 @@
     <div class="col-md-6 no-gutters">
       <div class="rightside d-flex justify-content-center align-items-center">
 
-          <div class="calculator">
-            <table>
-              <tr>
-                <td colspan="6"><input type="text" id="input" value="0" /></td>
-
-                <td><input type="button" id="c" value="C"> </td>
-                <td><input type="button" value="&lt;" id="clear"></td>
-              </tr>
-      
-              <tr>        
-     
-                  <td><input type="button" value="Science" id='open'></td>
-              </tr>
-              <tr>
-                <!-- <td><input type="button" value="cos" class="Scoperator"></td> -->
-                <td></td>
-                </tr>
-              <tr>
-                <!-- <td><input type="button" value="ans" class="Scoperator"></td> -->
-                <td></td>
-                  <!--&pi;-->
-                </td>
-                      </tr>
-              <tr>
-                </tr>
-
-            </table>
-
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+          <div class="input-group mb-3">
+            <input dir="rtl" type="text" class="form-control" id="input" value="0">
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary" type="button" id="clear">Clear</button>
+              <button class="btn btn-outline-secondary" type="button" id="open">Science</button>
+            </div>
           </div>
-
-        MIT CopyRight &copy;
-        <div class ="btn-group-vertical" role="group" aria-label="Vertical button group">
           <div class="btn-group btn-group-lg" role="group" aria-label="First Row">
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="7"></input>
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="8"></input>
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="9"></input>
-              <input type="button" class="operator btn btn-secondary btn-outline-dark" waves-effect value="+"></input>
-              <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="sin"></input>
-              <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="π"></input>
+            <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="7"></input>
+            <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="8"></input>
+            <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="9"></input>
+            <input type="button" class="operator btn btn-secondary btn-outline-dark" waves-effect value="+"></input>
+
 
           </div>
           <div class="btn-group btn-group-lg" role="group" aria-label="Second Row">
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="4"></input>
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="5"></input>
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="6"></input>
-              <input type="button" class="operator btn btn-secondary btn-outline-dark" waves-effect value="-"></input>
-              <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="cos"></input>
-              <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="ln"></input>
+            <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="4"></input>
+            <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="5"></input>
+            <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="6"></input>
+            <input type="button" class="operator btn btn-secondary btn-outline-dark" waves-effect value="-"></input>
+
 
           </div>
           <div class="btn-group btn-group-lg" role="group" aria-label="Third Row">
-      
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="1"></input>
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="2"></input>
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="3"></input>
-              <input type="button" class="operator btn btn-secondary btn-outline-dark" waves-effect value="*"></input>
-              <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="tan"></input>
-              <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="sqrt"></input>
+
+            <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="1"></input>
+            <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="2"></input>
+            <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="3"></input>
+            <input type="button" class="operator btn btn-secondary btn-outline-dark" waves-effect value="*"></input>
+
 
 
           </div>
           <div class="btn-group btn-group-lg" role="group" aria-label="Fourth Row">
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="0"></input>
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="." id="dot"></input>
-              <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="+/-"></input>
-              <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="sin"></input>
-              <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="log"></input>
+            <input type="button" class="inValue btn btn-secondary btn-outline-dark" waves-effect value="0"></input>
+            <input type="button" class="operator btn btn-secondary btn-outline-dark" waves-effect value="."
+              id="dot"></input>
+            <input type="button" class="operator btn btn-secondary btn-outline-dark" waves-effect value="/"></input>
+
 
           </div>
           <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-              <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="="></input>
+            <input type="button" class="btn  btn-outline-warning" waves-effect value="="></input>
           </div>
-      </div>
+
+        </div>
        
+       
+        <div class="btn-group-vertical" role="group">
+
+
+          <div class="btn-group btn-group-lg" role="group" aria-label="Fourth Row">
+            <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="sin"></input>
+            <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="π"></input>
+          </div>
+
+          <div class="btn-group btn-group-lg" role="group" aria-label="Fourth Row">
+            <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="cos"></input>
+            <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="ln"></input>
+          </div>
+
+
+          <div class="btn-group btn-group-lg" role="group" aria-label="Fourth Row">
+            <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="sin"></input>
+            <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="log"></input>
+          </div>
+          <div class="btn-group btn-group-lg" role="group" aria-label="Fifth Row">
+            <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect
+              value="sqrt"></input>
+            <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="tan"></input>
+
+          </div>
+        </div>
+  
       </div>
+      <footer>
+        MIT CopyRight &copy;
+      </footer>
     </div>
   </div>
 
 </body>
+
 </html>

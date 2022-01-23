@@ -6,6 +6,8 @@ let Cbtn = document.getElementById('c');
 let dot = document.getElementById('dot');
 let fin = "";
 let errormsg = document.querySelector('address');
+
+
 Cbtn.onclick = function clear() {
     input.value = 0;
     fin = '';
@@ -149,8 +151,8 @@ Scoperator.forEach(item => {
                 {
                     ln();
                 }
-                break; 
-                default:
+                break;
+            default:
                 PI();
                 break;
         }
@@ -194,5 +196,5 @@ function ln() {
 
 function PI() {
     // if (testValue())
-        inputText.value = Math.PI;
+    inputText.value = Math.PI;
 }

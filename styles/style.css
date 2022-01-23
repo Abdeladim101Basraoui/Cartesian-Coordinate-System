@@ -71,7 +71,7 @@
      * f(x) = x - 3
      *        x = var(--x)
      */
-  --function: calc(var(--x));
+  --function: calc(var(--x) );
 }
 
 /* styling */
@@ -99,7 +99,7 @@ article {
 }
 
 .rightside {
-  background-color: red;
+  background-color: rgb(3, 3, 3);
 }
 
 .leftside,
@@ -112,4 +112,10 @@ article {
   .rightside {
     height: 100vh;
   }
+
+}
+footer{
+  background-color: black;
+  color: #efefef;
+  text-align: center;
 }
