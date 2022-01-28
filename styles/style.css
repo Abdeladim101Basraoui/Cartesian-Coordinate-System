@@ -93,7 +93,11 @@ legend {
 }
 legend{
   width: 100%;
+  border: none;
+  border-top:3px solid #ccc;
+  text-align: center;
 }
+
 article {
   margin-top: 70px;
 }
