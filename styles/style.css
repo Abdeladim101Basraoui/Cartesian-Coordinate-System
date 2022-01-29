@@ -99,7 +99,8 @@ legend{
 }
 
 article {
-  margin-top: 70px;
+  margin:auto;
+  border: 1px dashed #ccc;
 }
 
 .rightside {
