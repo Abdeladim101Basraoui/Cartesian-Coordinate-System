@@ -201,3 +201,7 @@ function PI() {
     // if (testValue())
     inputText.value = Math.PI;
 }
+
+
+// change the CSS value
+let cal = document.querySelectorAll('#axis_x-3 .dot');

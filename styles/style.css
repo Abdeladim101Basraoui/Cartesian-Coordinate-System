@@ -59,19 +59,17 @@
 /* #axis_x-3 {
   --size: 350px;
 } */
+
 /* #axis_x-3 .dot {
-    /**
-     * f(x) = x - 3
-     *        x = var(--x)
-     
-    --function: calc(var(--x) - 3);
-  } */
+  --function: calc(var(--x) - 3);
+} */
 #axis_x-3 .dot {
   /**
-     * f(x) = x - 3
-     *  x = var(--x)
-     */
-  --function: calc((var(--x)*var(--x)));
+   * f(x) = 0.4x^3 - 5.25x - 4
+   *        0.4x^3 = var(--x) * var(--x) * var(--x)
+   *         5.25x = 5.25 * var(--x)
+   */
+  --function: calc(0.4 * var(--x) * var(--x) * var(--x) - 5.25 * var(--x) - 4);
 }
 
 /* styling */
@@ -96,7 +94,7 @@ legend {
   border: none;
   border-top: 3px solid #ccc;
   text-align: center;
-  margin:40px 0;
+  margin: 40px 0;
 }
 
 article {
@@ -129,9 +127,15 @@ footer {
   color: rgb(180, 150, 150);
 }
 
-span{
+span {
   width: 300px;
- color: #7e682e;
- font-style: italic;
-margin: auto;
+  color: #7e682e;
+  font-style: italic;
+  margin: auto;
+}
+.nav1 {
+  margin-right: 10px;
+}
+.vals{
+  margin-left: 10px;
 }
