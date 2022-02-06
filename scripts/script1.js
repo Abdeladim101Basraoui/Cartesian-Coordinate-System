@@ -2,21 +2,19 @@ let inputText = document.getElementById('input');
 let inputVal = document.querySelectorAll('.inValue');
 let operator = document.querySelectorAll('.operator');
 let Scoperator = document.querySelectorAll('.Scoperator');
-let Cbtn = document.getElementById('c');
+let Cbtn = document.getElementById('clear');
 let dot = document.getElementById('dot');
 let fin = "";
-let errormsg = document.querySelector('address');
-
-
+let errormsg = document.querySelector('.address');
 Cbtn.onclick = function clear() {
     input.value = 0;
     fin = '';
 }
 
-document.getElementById('clear').onclick = () => {
-    if (inputText.value.length >= 1)
-        inputText.value = inputText.value.slice(0, -1);
-}
+// document.getElementById('clear').onclick = () => {
+//     if (inputText.value.length >= 1)
+//         inputText.value = inputText.value.slice(0, -1);
+// }
 // global use
 function _append(item) {
     if (inputText.value == '0')
@@ -59,20 +57,21 @@ operator.forEach(
 
                     }
                     break;
+
                 case '-':
                     {
                         valid(item);
-
                     }
                     break;
 
-
                 default: {
                     if (fin != '') {
+                        //console.log('Im equale');
                         inputText.value = eval(valid(item));
                     }
                 }
                     break;
+
             }
         })
     }
@@ -102,7 +101,8 @@ function valid(item) {
 
 }
 
-
+//the tips span
+var tips = document.getElementById('tips');
 
 // Scientifique calculator
 Scoperator.forEach(item => { item.setAttribute('hidden', '') })
@@ -111,9 +111,12 @@ Scoperator.forEach(item => { item.setAttribute('hidden', '') })
 document.getElementById('open').onclick = () => {
     if (Scoperator[0].getAttribute('hidden') == null) {
         Scoperator.forEach(item => { item.setAttribute('hidden', '') })
+        tips.innerHTML = '';
     }
-    else
-        Scoperator.forEach(item => { item.removeAttribute('hidden') })
+    else {
+        Scoperator.forEach(item => { item.removeAttribute('hidden') });
+        tips.innerHTML = 'hint :  when you use the scientific operators please use the number FIRST then the operator [e.g 5 then cos()] to get 0.28366218546322625       ';
+    }
 }
 
 Scoperator.forEach(item => {

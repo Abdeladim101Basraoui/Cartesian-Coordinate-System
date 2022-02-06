@@ -11,16 +11,19 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
   <!-- <link rel="stylesheet" href="./styles/style1.css"> -->
-  <link rel="stylesheet" href="./scripts/script1.js">
+  <script src="./scripts/script1.js" defer></script>
 </head>
 
 <body>
+
   <div class="row no-gutters">
     <div class="col-md-6 no-gutters">
       <div class="leftside d-flex justify-content-center align-items-center">
         <fieldset>
           <legend>
-            <h1>f(x) = x</h1>
+            f(x)
+            <input type="text" class="form-control" name="inner-function" id="math-function" placeholder="X * X">
+            <input type="button" class="btn btn-dark" value="let's roll">
           </legend>
           <article>
 
@@ -53,9 +56,14 @@
       </div>
     </div>
     <div class="col-md-6 no-gutters">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="btn btn-outline-warning" href="./MathJS/index.html">Math.js</a>
+      </nav>
       <div class="rightside d-flex justify-content-center align-items-center">
-
         <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+          <div class="tips input-group mb-3">
+            <span id="tips"></span>
+          </div>
           <div class="input-group mb-3">
             <input dir="rtl" type="text" class="form-control" id="input" value="0">
             <div class="input-group-append">
@@ -98,12 +106,14 @@
 
           </div>
           <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-            <input type="button" class="btn  btn-outline-warning" waves-effect value="="></input>
+            <input type="button" class="operator btn  btn-outline-warning" waves-effect value="="></input>
           </div>
-
+          <div class="btn-group btn-group-lg">
+            <span class="address"></span>
+          </div>
         </div>
-       
-       
+
+
         <div class="btn-group-vertical" role="group">
 
 
@@ -128,8 +138,9 @@
             <input type="button" class="Scoperator btn btn-secondary btn-outline-dark" waves-effect value="tan"></input>
 
           </div>
+
         </div>
-  
+
       </div>
       <footer>
         MIT CopyRight &copy;
