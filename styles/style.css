@@ -63,14 +63,14 @@
 /* #axis_x-3 .dot {
   --function: calc(var(--x) - 3);
 } */
-#axis_x-3 .dot {
+/* #axis_x-3 .dot { */
   /**
    * f(x) = 0.4x^3 - 5.25x - 4
    *        0.4x^3 = var(--x) * var(--x) * var(--x)
    *         5.25x = 5.25 * var(--x)
    */
-  --function: calc(0.4 * var(--x) * var(--x) * var(--x) - 5.25 * var(--x) - 4);
-}
+  /* --function: calc(0.4 * var(--x) * var(--x) * var(--x) - 5.25 * var(--x) - 4);
+} */
 
 /* styling */
 /* demo - display only */
