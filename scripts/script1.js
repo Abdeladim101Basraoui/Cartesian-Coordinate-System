@@ -208,6 +208,7 @@ let cal = document.querySelectorAll('#axis_x-3 .dot');
 let first = document.getElementById('f-equation');
 let second = document.getElementById('s-equation');
 let third = document.getElementById('rd-equation');
+let fourth = document.getElementById('fourth-equation');
 
 //the axis div 
 let axis = document.querySelector('.axis');
@@ -230,13 +231,36 @@ stylesheet.type = 'text/css';
 /** x-3 */
 first.addEventListener('click', e => {
 
-    
+    styling('--c: 20; --cx: 5; --cy: 12; --dsize: 6', '.axis .dot { --function: calc(var(--x) - 3);} ');
+
+})
+
+//the second button 
+/**x2 - 5 */
+second.addEventListener('click', e => {
+    styling('--c: 20; --cx: 5; --cy: 12; --dsize: 6', '.axis .dot{ --function: calc(var(--x) * var(--x) - 5);}');
+})
+
+//the third one
+third.addEventListener('click', e => {
+    styling('--c: 20; --cx: 5; --cy: 12; --dsize: 6', '.axis .dot{ --function: calc(0.4 * var(--x) * var(--x) * var(--x) - 5.25 * var(--x) - 4);}');
+
+})
+
+//fourth one 
+fourth.addEventListener('click', e => {
+    styling('--c: 20; --cx: 5; --cy: 12; --dsize: 6', '.axis .dot{   --function: calc(1 / (var(--x) * var(--x)));}');
+
+})
+
+function styling(axisStyle, EleStyle) {
     //modifing the axis
+
     if (axis.hasAttribute('style')) {
         axis.removeAttribute('style');
     } else {
         axis.setAttribute('style', '');
-        axis.style = '--c: 20; --cx: 5; --cy: 12; --dsize: 6';
+        axis.style = axisStyle;
     }
 
     //modifing the style
@@ -244,42 +268,7 @@ first.addEventListener('click', e => {
         document.head.removeChild('style');
     }
     //the styling
-    let styles = '.axis .dot { --function: calc(var(--x) - 3);} ';
+    let styles = EleStyle;
     stylesheet.innerText = styles;
     document.head.appendChild(stylesheet);
-})
-
-//the second button 
-/**x2 - 5 */
-second.addEventListener('click', e => {
-    //change axis value
-    axis.style = '--c: 10; --cx: 5; --cy: 5;';
-    let styles = ' --function: calc(var(--x) * var(--x) - 5);';
-    // stylesheet.innerText = styles;
-})
-
-//the third one
-third.addEventListener('click', e => {
-
-})
-
-
-function styling(axisStyle,EleStyle)
-{
-        //modifing the axis
-        if (axis.hasAttribute('style')) {
-            axis.removeAttribute('style');
-        } else {
-            axis.setAttribute('style', '');
-            axis.style = axisStyle;
-        }
-    
-        //modifing the style
-        if (styelEle.nodeName.toLowerCase() == 'style') {
-            document.head.removeChild('style');
-        }
-        //the styling
-        let styles = EleStyle;
-        stylesheet.innerText = styles;
-        document.head.appendChild(stylesheet);
 }
